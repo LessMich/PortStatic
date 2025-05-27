@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michele Tedeschi - Sound Designer & Multimedia Audio Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-michele">Michele</span> Tedeschi
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="text-yellow">Michele</span> Tedeschi
+            </h1>
+            <h2 class="hero-subtitle">
+                Sound Designer & Multimedia Audio Specialist
+            </h2>
+            <p class="hero-description">
+                Crafting immersive audio experiences across film, music, and interactive media. 
+                From sound design to full production, I bring your creative vision to life.
+            </p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Featured <span class="text-yellow">Projects</span>
+                </h2>
+                <p class="section-description">
+                    A showcase of diverse audio work spanning multiple formats and creative contexts
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Audio Project 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <span class="portfolio-category">Music Production</span>
+                        </div>
+                        <h3 class="portfolio-title">Electronic Music Production</h3>
+                        <p class="portfolio-description">
+                            Complete production from composition to mastering for electronic music project. 
+                            Handled sound design, synthesis, and final mix.
+                        </p>
+                        <div class="audio-player">
+                            <div class="audio-controls">
+                                <button class="audio-btn" data-audio="audio1">
+                                    <span class="play-icon">▶️</span>
+                                    <span class="btn-text">Play Track</span>
+                                </button>
+                                <div class="audio-time">
+                                    <span class="current-time">0:00</span> / 
+                                    <span class="total-time">0:00</span>
+                                </div>
+                            </div>
+                            <div class="audio-progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <audio id="audio1" preload="metadata">
+                                <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Project 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <span class="portfolio-category">Sound Design</span>
+                        </div>
+                        <h3 class="portfolio-title">Short Film Sound Design</h3>
+                        <p class="portfolio-description">
+                            Created atmospheric soundscapes and foley for independent short film. 
+                            Managed dialogue editing and final audio post-production.
+                        </p>
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Short Film Sound Design"
+                                frameborder="0" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio Project 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <span class="portfolio-category">Post-Production</span>
+                        </div>
+                        <h3 class="portfolio-title">Podcast Audio Engineering</h3>
+                        <p class="portfolio-description">
+                            Multi-episode podcast series - audio cleanup, editing, mixing, and mastering. 
+                            Enhanced dialogue clarity and added professional polish.
+                        </p>
+                        <div class="audio-player">
+                            <div class="audio-controls">
+                                <button class="audio-btn" data-audio="audio2">
+                                    <span class="play-icon">▶️</span>
+                                    <span class="btn-text">Play Track</span>
+                                </button>
+                                <div class="audio-time">
+                                    <span class="current-time">0:00</span> / 
+                                    <span class="total-time">0:00</span>
+                                </div>
+                            </div>
+                            <div class="audio-progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <audio id="audio2" preload="metadata">
+                                <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Project 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <span class="portfolio-category">Commercial</span>
+                        </div>
+                        <h3 class="portfolio-title">Commercial Audio Branding</h3>
+                        <p class="portfolio-description">
+                            Composed and produced audio logo and brand sound elements for advertising campaign. 
+                            Created memorable sonic identity.
+                        </p>
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Commercial Audio Branding"
+                                frameborder="0" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="text-yellow">Services</span> & Expertise
+                </h2>
+                <p class="section-description">
+                    Professional audio solutions tailored to your creative needs
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">🎵</div>
+                    <h3 class="service-title">Sound Design</h3>
+                    <p class="service-description">
+                        Creating immersive audio experiences for film, games, and interactive media
+                    </p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🎧</div>
+                    <h3 class="service-title">Music Production</h3>
+                    <p class="service-description">
+                        Full-scale music production from composition to final mastering
+                    </p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🎙️</div>
+                    <h3 class="service-title">Audio Post-Production</h3>
+                    <p class="service-description">
+                        Professional editing, mixing, and mastering for all media formats
+                    </p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🔊</div>
+                    <h3 class="service-title">Multimedia Audio</h3>
+                    <p class="service-description">
+                        Interactive audio solutions for digital experiences and installations
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">
+                        About <span class="text-yellow">Michele</span>
+                    </h2>
+                    <div class="about-description">
+                        <p>
+                            With years of experience in sound design and multimedia audio, I specialize in creating 
+                            immersive audio experiences that enhance storytelling and engage audiences across all media formats.
+                        </p>
+                        <p>
+                            My work spans from music production and film sound design to interactive audio for digital 
+                            experiences. I believe in the power of sound to transform and elevate any creative project.
+                        </p>
+                        <p>
+                            Whether you need a complete audio post-production workflow or specialized sound design elements, 
+                            I bring technical expertise and creative vision to every collaboration.
+                        </p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Let's Collaborate</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/7098114/pexels-photo-7098114.jpeg" alt="Michele at work">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Get <span class="text-yellow">In Touch</span>
+                </h2>
+                <p class="section-description">
+                    Ready to bring your project to life? Let's discuss your audio needs.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-section">
+                        <h3 class="contact-title">Contact Information</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>michele.tedeschi@email.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>Available for remote and on-location work</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-section">
+                        <h3 class="contact-title">Project Inquiries</h3>
+                        <p class="contact-text">
+                            I'm always excited to discuss new projects and creative collaborations. 
+                            Whether you need sound design, music production, or audio post-production, 
+                            let's explore how we can work together.
+                        </p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="project-type">Project Type</label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="">Select project type</option>
+                            <option value="sound-design">Sound Design</option>
+                            <option value="music-production">Music Production</option>
+                            <option value="post-production">Audio Post-Production</option>
+                            <option value="multimedia">Multimedia Audio</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2024 Michele Tedeschi. Sound Designer & Multimedia Audio Specialist.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
